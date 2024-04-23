@@ -1,0 +1,84 @@
+﻿.search-bar {
+    padding: 10px;
+    margin: 10px 0;
+    width: 80%; 
+    font-size: 16px;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+header {
+    background-color: #0073e6;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+
+input[type="text"],
+input[type="password"],
+button,
+input[type="file"] {
+    padding: 8px;
+    margin: 5px 0;
+    display: block;
+    width: 300px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 315px;
+}
+
+    button:hover {
+        opacity: 0.8;
+    }
+
+.website-info {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+    .website-info h2 {
+        color: #0073e6;
+    }
+
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #0073e6;
+    color: #fff;
+}
+
+
+.show-password-button {
+    margin: 5px 0;
+    padding: 5px 10px;
+    font-size: 0.9em;
+}
+
+.edit-entry {
+    background-color: #f4b400;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+    .edit-entry:hover {
+        background-color: #ffcb05;
+    }

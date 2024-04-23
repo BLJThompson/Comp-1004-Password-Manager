@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <script src="Scripts/upload-button.js" defer></script>
+    <script src="Scripts/export-button.js" defer></script>
+    <script src="Scripts/add-password.js" defer></script>
+    <script src="Scripts/index.js" defer></script>
+    <script src="Scripts/searching.js" defer></script>
+
+    <link rel="stylesheet" href="CSS/styles.css">
+
+
+
+    <title>Password Manager - Sprint 4</title>
+</head>
+<body>
+    <header>
+        <h1>Password Manager</h1>
+    </header>
+    <!--Search bar-->
+    <input type="text" id="searchInput" class="search-bar" placeholder="Search..." oninput="searchAndDisplayResults(this.value)">
+
+    <div class="content">
+        <!-- Debugging -->
+        <!--<button id="generateEntriesButton" onclick="generateAndAddEntriesToUserData()">Generate Entries</button>-->
+        
+    </div>
+
+    <!-- File input for uploading a JSON file -->
+    <input type="file" id="fileInput" accept=".json">
+    <!-- File output for exporting a JSON file which calls function exportUserData-->
+    <button id="exportButton" onclick="exportUserData()">Export file</button>
+
+    <!-- Add New Password Form with extra buttons to generate button, show/ hide password, and the submit button-->
+    <form id="addPasswordForm">
+        <div>
+            <label for="websiteName">Website Name:</label>
+            <input type="text" id="websiteName" required>
+        </div>
+        <div>
+            <label for="websiteURL">Website URL:</label>
+            <input type="text" id="websiteURL" required>
+        </div>
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <div class="password-input">
+                <input type="password" id="password" required>
+                <button type="button" onclick="toggleAddPasswordVisibility('password')">Show</button>
+            </div>
+            <div id="passwordStrengthDisplay">Password Strength: N/A</div>
+        </div>
+        <div>
+            <label for="confirmPassword">Confirm Password:</label>
+            <div class="password-input">
+                <input type="password" id="confirmPassword" required>
+                <button type="button" onclick="toggleAddPasswordVisibility('confirmPassword')">Show</button>
+            </div>
+            <div class="generate-password">
+                <button type="button" onclick="AddGeneratedPassword()">Generate Password</button>
+            </div>
+        </div>
+        <div>
+            <button type="button" id="addPasswordButton" onclick="addPasswordFormSubmit()">Add New Password</button>
+        </div>
+    </form>
+
+
+    <h1>User Data</h1>
+    <div id="userData">
+        <!-- Display user data here -->
+    </div>
+
+    <footer>
+        <p>&copy; 2024 - Password Manager</p>
+    </footer>
+</body>
+</html>

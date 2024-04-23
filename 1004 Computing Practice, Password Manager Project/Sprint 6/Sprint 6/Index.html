@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="CSS/addpassword.css">
+    <link rel="stylesheet" href="CSS/edit.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/leftmenu.css">
+    <link rel="stylesheet" href="CSS/login-form.css">
+    <link rel="stylesheet" href="CSS/register.css">
+
+
+    <script src="Scripts/index.js" defer></script>
+    <script src="Scripts/addPassword.js" defer></script>
+
+    <script src="Scripts/export.js" defer></script>
+    <script src="Scripts/edit.js" defer></script>
+    <script src="Scripts/search.js" defer></script>
+    <script src="Scripts/login.js" defer></script>
+    <script src="Scripts/register.js" defer></script>
+    <script src="Scripts/logout.js" defer></script>
+
+    <script src="Scripts/allitems.js" defer></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Password Manager - Sprint 6</title>
+</head>
+<body>
+    <header>
+        <div class="search-container" id="searchContainer">
+            <div class="title">Password Manager</div>
+            <input type="text" id="searchInput" class="search-bar" placeholder="Search..." oninput="searchAndDisplayResults(this.value)">
+        </div>
+    </header>
+    <div class="parent-container">
+
+        <div class="left-menu-container">
+            <div class="items-button-container">
+                <button id="itemsButton" class="items-button" onclick="showAllItems()">All items</button>
+            </div>
+
+            <div class="add-password-button-container">
+                <!-- Add Password Button -->
+                <button id="addPasswordFormButton" class="add-password-button" onclick="showAddPasswordModal()">Add New Password</button>
+            </div>
+            <div class="export-button-container">
+                <!-- File output for exporting a JSON file which calls function exportUserData-->
+                <button id="exportButton" class="export-button" onclick="exportUserData()">Export file</button>
+            </div>
+
+            <div class="logout-button-container">
+                <button id="logoutButton" class="logoutButton" onclick="logout()">Logout</button>
+            </div>
+        </div>
+    </div>
+
+        <div class="main-content">
+            <!-- Password form will be injected here -->
+            <div class="passwordformdiv" id="passwordFormDiv"></div>
+            <!-- Edit form will be injected here -->
+
+
+            <h1>User Data</h1>
+            <div id="dataDisplayContainer">
+                <!-- Display user data here -->
+                <div class="editformdiv" id="editFormDiv"></div>
+            </div>
+        </div>
+
+</body>
+</html>

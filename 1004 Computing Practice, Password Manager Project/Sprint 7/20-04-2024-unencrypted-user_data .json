@@ -1,0 +1,46 @@
+{
+  "entries": [
+    {
+      "website": {
+        "id": "1",
+        "url": "https://example1.com",
+        "name": "Website 1",
+        "websitenote": "",
+        "categories": "",
+        "credentials": {
+          "username": "username1",
+          "userpassword": "password1"
+        }
+      }
+    },
+    {
+      "website": {
+        "id": "2",
+        "url": "https://example2.com",
+        "name": "Website 2",
+        "websitenote": "",
+        "categories": "",
+        "credentials": {
+          "username": "username2",
+          "userpassword": "password2"
+        }
+      }
+    }
+  ],
+  "secureNotes": [
+    {
+      "secureNote": {
+        "SecID": "1",
+        "SecName": "First Note",
+        "SecNote": "Hello World"
+      }
+    },
+    {
+      "secureNote": {
+        "SecID": "2",
+        "SecName": "Second Note",
+        "SecNote": "The year is 2024"
+      }
+    }
+  ]
+}

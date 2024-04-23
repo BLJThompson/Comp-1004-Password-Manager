@@ -1,0 +1,77 @@
+﻿/* Container for each website info block */
+.searching-website-info {
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+    .searching-website-info:hover {
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    }
+
+/* Style for website name */
+.searching-website-name {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+/* Generic style for paragraphs (ID, URL, Username, etc.) */
+.searching-website-info p {
+    margin: 8px 0;
+    color: #34495e;
+    line-height: 1.6;
+}
+
+/* Specific styling for the password and strength sections */
+.searching-website-password,
+.searching-password-strength {
+    font-weight: 500;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.searching-password-value {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Buttons styling */
+.searching-website-info button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+}
+
+.searching-show-password-button {
+    background-color: #3498db;
+    color: white;
+}
+
+    .searching-show-password-button:hover {
+        background-color: #2980b9;
+    }
+
+.searching-edit-button {
+    background-color: #f39c12;
+    color: white;
+}
+
+    .searching-edit-button:hover {
+        background-color: #e67e22;
+    }
+
+/* Style for 'No matching results' message */
+.searching-no-results {
+    color: #d9534f;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}

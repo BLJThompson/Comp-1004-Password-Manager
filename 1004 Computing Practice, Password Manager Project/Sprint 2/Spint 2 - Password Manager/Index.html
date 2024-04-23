@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <script src="upload-button.js" defer></script>
+    <script src="export-button.js" defer></script>
+    <script src="add-password.js" defer></script>
+    <script src="index.js" defer></script>
+
+    <title>Password Manager</title>
+</head>
+<body>
+    <header>
+        <h1>Password Manager</h1>
+    </header>
+
+    <!-- File input for uploading a JSON file -->
+    <input type="file" id="fileInput" accept=".json">
+    <!-- File output for exporting a JSON file which calls function exportUserData-->
+    <button id="exportButton" onclick="exportUserData()">Export file</button>
+
+    <!-- Add New Password Form -->
+    <form id="addPasswordForm">
+        <div>
+            <label for="websiteName">Website Name:</label>
+            <input type="text" id="websiteName" required>
+        </div>
+        <div>
+            <label for="websiteURL">Website URL:</label>
+            <input type="text" id="websiteURL" required>
+        </div>
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <div class="password-input">
+                <input type="password" id="password" required>
+                <button type="button" onclick="toggleAddPasswordVisibility('password')">Show</button>
+            </div>
+        </div>
+        <div>
+            <label for="confirmPassword">Confirm Password:</label>
+            <div class="password-input">
+                <input type="password" id="confirmPassword" required>
+                <button type="button" onclick="toggleAddPasswordVisibility('confirmPassword')">Show</button>
+            </div>
+        </div>
+        <div>
+            <button type="button" id="addPasswordButton" onclick="addPasswordFormSubmit()">Add New Password</button>
+        </div>
+    </form>
+
+
+    <h1>User Data</h1>
+    <div id="userData">
+        <!-- Display user data here -->
+    </div>
+
+    <footer>
+        <p>&copy; 2024 - Password Manager</p>
+    </footer>
+</body>
+</html>

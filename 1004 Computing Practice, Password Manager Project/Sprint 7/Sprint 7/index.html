@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Secure JSON Export/Import</title>
+
+
+    <link rel="stylesheet" href="CSS/addpassword.css">
+    <link rel="stylesheet" href="CSS/display.css">
+    <link rel="stylesheet" href="CSS/edit.css">
+    <link rel="stylesheet" href="CSS/leftmenu.css">
+
+    <link rel="stylesheet" href="CSS/login.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/master.css">
+    <link rel="stylesheet" href="CSS/register.css">
+
+</head>
+<body>
+    <header>
+        <div class="search-container" id="searchContainer">
+            <div class="title">LockShield Vault</div>
+            <input type="text" id="searchInput" class="search-bar" placeholder="Search..." oninput="searchAndDisplayResults(this.value)">
+        </div>
+    </header>
+
+    <h3>LockShield Vault</h3>
+
+    <div class="left-menu-container">
+        <div class="items-button-container">
+            <!-- Show All Items Buttons -->
+            <div><button id="allItemsButton" class="all-items-button" onclick="showAllItems()">All Items</button></div>
+            <!-- Show Passwords Button -->
+            <div><button id="passwordItemButton" class="password-item-button" onclick="showPasswords()">Show Passwords</button></div>
+            <!-- Show Secure Notes Button -->
+            <div><button id="secNoteButton" class="sec-note-button" onclick="showSecNotes()">Show Secure Notes</button></div>
+        </div>
+
+        <div class="add-password-button-container">
+            <!-- Add Password Button -->
+            <div><button id="addPasswordFormButton" class="add-password-button" onclick="showAddPasswordModal()">Add New Password</button></div>
+            <!-- Add Secure note button -->
+            <div><button id="addSecNoteFormButton" class="add-sec-note-button" onclick="showAddSecureNoteModal()">Add Secure Note</button></div>
+            <!-- Add Master Password -->
+            <div><button id="addMasterPasswordButton" class="add-master-password-button" onclick="showAddMasterPasswordModal()">View Master Password</button></div>
+        </div>
+
+        <div class="logout-export-button-container">
+            <!-- Export Unencrypted User Data -->
+            <!--<div><button id="exportUserDataButton" class="export-user-data-button" onclick="exportUserData()">Export Unencrypted User Data</button></div>-->
+            <!-- Export Encrypted User Data -->
+            <div><button id="encryptAndDownloadButton" class="encrypt-and-download-button" onclick="encryptAndDownload()">Export Encrypted User Data</button></div>
+            <!-- Logout Button -->
+            <div><button id="logoutButton" class="logout-button" onclick="logout()">Logout</button></div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div id="dataDisplayContainer">
+            <div id="displayArea">
+
+
+                <div id="websiteDisplay"></div>
+            </div>
+        </div>
+
+        <div id="passwordFormDiv"></div>
+        <div id="secureNotesDisplay"></div>
+
+    </div>
+    <script src="Scripts/Display/displaydata.js"></script>
+
+    <script src="Scripts/Functionality/addMasterpassword.js"></script>
+    <script src="Scripts/Functionality/addpassword.js"></script>
+    <script src="Scripts/Functionality/addsecnotes.js"></script>
+    <script src="Scripts/Functionality/edit.js"></script>
+    <script src="Scripts/Functionality/noteedit.js"></script>
+    <script src="Scripts/Functionality/search.js"></script>
+
+    <script src="Scripts/application.js"></script>
+    <script src="Scripts/login.js"></script>
+    <script src="Scripts/logout.js"></script>
+    <script src="Scripts/register.js"></script>
+
+    <script src="rawdata.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>

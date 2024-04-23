@@ -1,0 +1,97 @@
+﻿
+.edit-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #333;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+}
+
+
+.password-group .password-input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-input {
+    flex: 1;
+}
+
+.toggle-password-visibility,
+.edit-generate-password {
+    padding: 10px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.toggle-password-visibility {
+    background-color: #eee;
+    color: #333;
+}
+
+.edit-generate-password {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+/* Password strength indicator */
+.password-strength {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #333;
+}
+
+.password-strength-indicator {
+    font-weight: bold;
+}
+
+/* Form actions */
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.save-changes,
+.cancel-edit {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.save-changes {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.cancel-edit {
+    background-color: #dc3545;
+    color: #fff;
+}

@@ -1,0 +1,220 @@
+﻿/* Styles for each entry */
+.main-content {
+    margin-left: 300px; 
+    padding: 90px; 
+}
+
+.Userdata-container {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    overflow: hidden;
+    width: 70%; 
+    max-width: 960px; 
+    margin-left: auto;
+    margin-right: auto; 
+    padding: 20px;
+}
+
+.userdatatb {
+    background-color: #dfe4d6;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-bottom: 40px;
+    width: 100%; 
+    border: 2px solid #ccc; 
+}
+
+.userdata-website-header {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.userdata-website-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+.user-data-table {
+    border-collapse: collapse;
+    margin-top: 15px;
+    width: 100%; 
+    table-layout: fixed; 
+}
+
+    .user-data-table th,
+    .user-data-table td {
+        text-align: left;
+        padding: 10px;
+        border-bottom: 1px solid #eee;
+        border: 1px solid #ccc;
+    }
+
+    .user-data-table th {
+        color: #555;
+        font-weight: normal;
+        border-left: 1px solid #ccc;
+    }
+
+    .user-data-table tr:last-child th,
+    .user-data-table tr:last-child td {
+        border-bottom: none;
+    }
+
+.password-strength-bar {
+    height: 10px;
+    background-color: #ddd;
+    width: 150px;
+    border-radius: 5px;
+}
+
+.edit-entry,
+.toggle-password {
+    padding: 8px 15px;
+    margin-top: 10px;
+    border: 1px solid #ccc; 
+    background-color: #f5f5f5;
+    border-radius: 4px; 
+    cursor: pointer; 
+    font-size: 0.9em;
+    width: 150px; 
+    display: inline-block; 
+    text-align: center; 
+}
+
+    .edit-entry:hover,
+    .toggle-password:hover {
+        background-color: #e6e6e6;
+    }
+
+.shown-password {
+    font-weight: bold; 
+    color: #d35400; 
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .Userdata-container {
+        width: 100%;
+        max-width: none; 
+    }
+
+    .user-data-table th,
+    .user-data-table td {
+        padding: 5px;
+        border: 1px solid #ccc;
+    }
+
+    .edit-entry,
+    .toggle-password {
+        padding: 5px 10px;
+    }
+}
+
+.user-data-table th:nth-child(1),
+.user-data-table td:nth-child(1) {
+    width: 150px; 
+}
+
+.user-data-table th:nth-child(2),
+.user-data-table td:nth-child(2) {
+    width: 150px; 
+}
+
+.user-data-table th:nth-child(3),
+.user-data-table td:nth-child(3) {
+    width: 150px;
+}
+
+.user-data-table th:nth-child(4),
+.user-data-table td:nth-child(4) {
+    width: 150px;
+}
+
+
+.secureNotesDisplay {
+    background-color: #9ac351;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 90%; 
+    max-width: 960px; 
+}
+
+
+/* Styling for each note entry */
+.note-entry {
+    background-color: #dfe4d6;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+    .note-entry:last-child {
+        margin-bottom: 0;
+    }
+
+
+    .note-entry h4 {
+        font-size: 1.5em;
+        color: #333;
+        margin-bottom: 5px;
+    }
+
+
+    .note-entry p {
+        color: #666;
+        font-size: 14px;
+    }
+
+/* Button for editing notes */
+.edit-note-btn,
+.toggle-note-btn {
+    padding: 8px 15px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    font-size: 0.9em; 
+    width: 150px;
+    display: inline-block;
+    text-align: center; 
+}
+
+    .edit-note-btn:hover,
+    .toggle-note-btn:hover {
+        background-color: #e6e6e6;
+    }
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .secureNotesDisplay {
+        width: 100%; 
+        padding: 10px;
+        margin: 20px 10px;
+    }
+
+    .note-entry {
+        padding: 10px;
+        font-size: 16px; 
+    }
+}

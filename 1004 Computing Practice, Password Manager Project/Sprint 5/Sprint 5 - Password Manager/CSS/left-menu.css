@@ -1,0 +1,66 @@
+﻿.left-menu-container {
+    width: 250px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    height: calc(100vh - 60px); 
+    box-sizing: border-box;
+    position: fixed;
+    top: 70px; 
+    left: 0;
+    overflow-y: auto;
+    z-index: 500; 
+}
+
+
+/* Spacing between button containers */
+.home-button-container,
+.file-input-container,
+.add-password-button-container,
+.export-button-container,
+.security-Dashboard-button-container,
+.logout-button-container {
+    margin-bottom: 20px; 
+}
+
+
+.home-button,
+.add-password-button,
+.export-button,
+.Security-Dashboard-button,
+.logout-button{
+    width: 100%;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+    text-align: center;
+    background-color: #007bff; 
+}
+
+ 
+    .home-button:hover,
+    .add-password-button:hover,
+    .export-button:hover,
+    .Security-Dashboard-button:hover {
+        background-color: #0056b3; 
+    }
+
+
+.logout-button {
+    background-color: #dc3545; 
+}
+
+    .logout-button:hover {
+        background-color: #c82333; 
+    }
+
+
+.file-input {
+    width: calc(100% - 20px); 
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}

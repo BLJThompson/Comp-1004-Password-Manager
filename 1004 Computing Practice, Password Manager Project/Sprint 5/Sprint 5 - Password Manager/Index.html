@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <script src="Scripts/upload-button.js" defer></script>
+    <script src="Scripts/export-button.js" defer></script>
+    <script src="Scripts/add-password.js" defer></script>
+    <script src="Scripts/index.js" defer></script>
+    <script src="Scripts/searching.js" defer></script>
+
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/edit-form.css">
+    <link rel="stylesheet" href="CSS/add-password.css">
+    <link rel="stylesheet" href="CSS/left-menu.css">
+    <link rel="stylesheet" href="CSS/searching.css">
+
+
+    <title>Password Manager - Sprint 5</title>
+</head>
+<body>
+    <header>
+        <div class="search-container">
+            <div class="title">Password Manager</div>
+            <input type="text" id="searchInput" class="search-bar" placeholder="Search..." oninput="searchAndDisplayResults(this.value)">
+        </div>
+
+
+    </header>
+
+
+    <div class="left-menu-container">
+        <div class="home-button-container">
+            <button id="homeButton" class="home-button" onclick="">Home</button>
+        </div>
+        <div class="file-input-container">
+            <!-- File input for uploading a JSON file -->
+            <input type="file" id="fileInput" accept=".json" class="file-input">
+        </div>
+        <div class="add-password-button-container">
+            <!-- Add Password Button -->
+            <button id="addPasswordFormButton" class="add-password-button" onclick="toggleAddPasswordForm()">Add New Password</button>
+        </div>
+        <div class="export-button-container">
+            <!-- File output for exporting a JSON file which calls function exportUserData-->
+            <button id="exportButton" class="export-button" onclick="exportUserData()">Export file</button>
+        </div>
+        <div class="security-Dashboard-button-container">
+            <button id="securityDashboardButton" class="Security-Dashboard-button" onclick="">Security Dashboard(Not implemented)</button>
+        </div>
+        <div class="logout-button-container">
+            <button id="logoutButton" class="logout-button" onclick="">Logout(Not implemented)</button>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="passwordformdiv">
+            <!-- Password form here -->
+        </div>
+
+        <h1>User Data</h1>
+        <div id="userData">
+            <!-- Display user data here -->
+        </div>
+    </div>
+
+
+    <footer>
+        <p>&copy; 2024 - Password Manager</p>
+    </footer>
+</body>
+</html>

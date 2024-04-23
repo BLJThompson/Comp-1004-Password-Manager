@@ -1,0 +1,74 @@
+﻿/* Modal Backdrop styles */
+.login-modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Login Modal styles */
+.login-modal {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: auto;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+/* Styles for the form inside the modal */
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+    .login-form input[type="password"],
+    .login-form input[type="file"],
+    .login-form button {
+        margin-top: 10px;
+        padding: 8px;
+        font-size: 16px; 
+    }
+
+.login-button,
+.register-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+    .login-button:hover,
+    .register-button:hover {
+        background-color: #0056b3; 
+    }
+
+/* Notification styles */
+.login-notification {
+    color: red; 
+    padding: 10px 0;
+    text-align: center;
+    font-size: 20px;
+}
+
+.account-query {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 20px;
+    
+}
+
+.register-button {
+    width: 100%; 
+    margin-top: 5px;
+}

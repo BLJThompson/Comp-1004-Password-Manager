@@ -1,0 +1,216 @@
+﻿/*Edit Modal form*/
+.edit-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    width: auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.edit-form-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #444;
+}
+
+.form-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.password-group {
+    position: relative;
+    display: block;
+}
+
+.form-btn,
+.savenote-btn,
+.deletenote-btn{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+
+
+.form-btn:hover {
+    background-color: #0056b3;
+}
+
+.close-edit-btn {
+    background-color: #dc3545;
+}
+
+    .close-edit-btn:hover {
+        background-color: #c82333;
+    }
+
+.password-strength-bar {
+    height: 10px;
+    width: 100%;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+
+.password-strength-indicator {
+    font-weight: bold;
+}
+
+.toggle-password-visibility,
+.edit-generate-password {
+    padding: 5px 10px;
+    margin-top: 5px;
+    margin-left: 10px;
+    background-color: #6c757d;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+    .toggle-password-visibility:hover,
+    .edit-generate-password:hover {
+        background-color: #5a6268;
+    }
+
+.form-actions {
+    margin-top: 20px;
+}
+
+/*Edit modal CSS*/
+.edit-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 50;
+}
+
+.edit-form-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: auto; 
+    max-width: 500px;
+}
+
+.form-title-container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%; 
+}
+
+.edit-form-title {
+    margin: 0;
+    flex-grow: 1; 
+}
+
+.form-btn.close-edit-btn {
+    margin-left: 20px;
+    padding: 5px 10px; 
+    font-size: 0.9rem; 
+    cursor: pointer; 
+    border: none; 
+    background-color: #dc3545;
+    color: white; 
+}
+
+    .form-btn.close-edit-btn:hover {
+        background-color: #c82333; 
+    }
+
+/* Modal backdrop */
+.edit-note-modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.edit-note-modal {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+    .modal-header h2 {
+        font-size: 24px;
+        color: #333;
+    }
+
+.close-modal-btn {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    font-size: 24px;
+    color: #333;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #444;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+

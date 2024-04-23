@@ -1,0 +1,27 @@
+﻿/* Style for the "Choose File" button */
+.menu-button import-fileBtnn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #555; /* Change the background color as needed */
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+    /* Style for the file input label */
+    .menu-button import-fileBtn span {
+    margin-left: 10px;
+    color: #fff;
+}
+
+    /* Style for the button when a file is selected */
+    .menu-button import-fileBtn-selected {
+    background-color: #4CAF50;
+    color: #fff;
+}

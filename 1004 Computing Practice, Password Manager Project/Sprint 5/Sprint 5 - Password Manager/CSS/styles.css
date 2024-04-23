@@ -1,0 +1,136 @@
+﻿header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: darkgray;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    box-sizing: border-box; 
+    z-index: 1000; 
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+}
+.search-container {
+    width: 100%;
+    max-width: 600px; 
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+}
+.search-bar {
+    padding: 10px;
+    margin: 10px 0;
+    width: 80%; 
+    margin-right: 10px;
+    font-size: 16px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+
+
+.website-info {
+    display: inline-grid;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd; 
+    gap: 5px; 
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    background-color: lightblue;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); 
+    margin-bottom: 15px; 
+    width: 100%;
+}
+
+.website-title,
+.website-url,
+.website-username,
+.website-password,
+.website-strength {
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.website-title {
+    flex: auto; 
+    width: 100px; 
+}
+
+.website-url {
+    flex: 20%;
+    min-width: 120px;
+}
+
+.website-username,
+.website-password {
+    flex: 15%; 
+    min-width: 120px;
+}
+
+.website-strength {
+    flex:15%;
+    min-width: 120px; 
+}
+
+.show-password,
+.edit-entry {
+    padding: 5px 10px;
+    border: none;
+    background-color: #5cb85c;
+    color: white;
+    cursor: pointer;
+    flex:auto; 
+}
+
+.edit-entry {
+    background-color: #5bc0de;
+}
+
+@media (max-width: 768px) {
+    .website-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .show-password,
+    .edit-entry {
+        width: 100%;
+        margin-top: 5px;
+    }
+}
+
+
+/* General styling to ensure the main content doesn't overlap with the fixed header and left menu */
+.main-content {
+    margin-top: 70px; 
+    margin-left: 270px;
+    padding: 20px; 
+}
+
+/* Specific styling for the content area */
+.passwordformdiv, #userData {
+    background-color: #fff; 
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #333; 
+    margin-bottom: 20px; 
+}
