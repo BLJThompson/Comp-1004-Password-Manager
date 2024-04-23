@@ -11,3 +11,5 @@ The key features are
 •	Strength indicator 
 •	Generate a password
 •	JSON encryption & decryption 
+
+Each JSON file to use is in the Sprint Folders 
